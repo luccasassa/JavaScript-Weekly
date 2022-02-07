@@ -11,6 +11,7 @@ let opcion = 999;
 alert(`Recuerde que la capacidad máxima de la cafetera son ${capMaxima} cápsulas.
 Proceda al MENU.`);
 
+/* invoco función */
 menu(capMaxima,cantActual,opcion, nombre);
 
 /* FUNCION */
