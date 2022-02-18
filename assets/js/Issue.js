@@ -142,14 +142,14 @@ function menuPrincipal(productos) {
 function menu1(productos) {
     do {
         opcion1 = parseInt(prompt(`(m1) QUE STOCK QUERES VER?
-        1. Mostrar lista de Mothers.
-        2. Mostrar lista de Procesadores.
-        3. Mostrar lista de Memorias RAM.
-        4. Mostrar lista de GPUs.
-        5. Mostrar lista de Sólidos.
-        6. Mostrar lista de Gabinetes.
-        7. Mostrar lista de Fuentes.
-        8. Mostrar lista de Monitores.
+        1. Mostrar Stock de Mothers.
+        2. Mostrar Stock de Procesadores.
+        3. Mostrar Stock de Memorias RAM.
+        4. Mostrar Stock de GPUs.
+        5. Mostrar Stock de Sólidos.
+        6. Mostrar Stock de Gabinetes.
+        7. Mostrar Stock de Fuentes.
+        8. Mostrar Stock de Monitores.
         9. Mostrar Stock Completo.
         0. VOLVER ATRAS.`));
         
