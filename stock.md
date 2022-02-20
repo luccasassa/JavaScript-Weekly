@@ -6,7 +6,7 @@ Precio Combo: $4,610.00
 - Mother ASUS PRIME A320M-K Ryzen 2da Gen Ready M-ATX
 Precio Combo: $4,990.00
 
-- Mother ASUS PRIME A320M-K Ryzen 2da Gen Ready M-ATX
+- Mother Asrock A320M-HDV R4.03 Ryzen M-ATX
 Precio Combo: $5,800.00
 
 - Mother MSI A320M PRO-VH AM4
