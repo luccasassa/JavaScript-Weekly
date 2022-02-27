@@ -1,21 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="./assets/styles/main.css">
-    
-    <title>PRIMERA ENTREGA DEL PROYECTO FINAL 16-2</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <title>Eventos - Sassaroli</title>
 </head>
 
 <body>
-    <h1>Base de Datos</h1>
-    <h2>Tienda de Hardware</h2>
+    <main class="calculadora">
+        <div class="container">
+            <h1>CALCULOS BÁSICOS</h1>
+            <p>Elegí el tipo de operación que queres hacer.</p>
+            <div class="buttons">
+                <input type="button" onclick="sumar()" class="buttons" value="Sumar">
+                <input type="button" onclick="restar()" class="buttons" value="Restar">
+                <input type="button" onclick="multiplicar()" class="buttons" value="Multiplicar">
+                <input type="button" onclick="dividir()" class="buttons" value="Dividir">
+            </div>
+        </div>
+    </main>
 
-    <script src="./assets/js/Issue.js"></script>
+    <footer>
+        <span>Sassaroli Luca - CoderHouse</span>
+    </footer>
+
+    <script src="js/javascript.js"></script>
 </body>
 
 </html>
