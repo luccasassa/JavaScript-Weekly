@@ -1,0 +1,242 @@
+[
+    {
+        "id": 1,
+        "img": "./assets/img/productos/adidas/3MC-VULCANIZADOS.png",
+        "marca": "./assets/img/productos/adidas/mark-adidas",
+        "titulo": "ZAPATILLAS ADIDAS ORIGINALS 3MC-VULCANIZADOS",
+        "genero": "HOMBRE",
+        "precio": 11999
+    },
+    {
+        "id": 2,
+        "img": "./assets/img/productos/adidas/MULTIX.png",
+        "marca": "./assets/img/productos/adidas/mark-adidas",
+        "titulo": "ZAPATILLAS ADIDAS ORIGINALS MULTIX",
+        "genero": "HOMBRE",
+        "precio": 14999
+    },
+    {
+        "id": 3,
+        "img": "./assets/img/productos/adidas/STAN-SMITH.png",
+        "marca": "./assets/img/productos/adidas/mark-adidas",
+        "titulo": "ZAPATILLAS ADIDAS ORIGINALS STAN SMITH",
+        "genero": "HOMBRE",
+        "precio": 17999
+    },
+    {
+        "id": 4,
+        "img": "./assets/img/productos/adidas/SUPERSTAR-1.png",
+        "marca": "./assets/img/productos/adidas/mark-adidas",
+        "titulo": "ZAPATILLAS ADIDAS ORIGINALS SUPERSTAR",
+        "genero": "UNISEX",
+        "precio": 20999
+    },
+    {
+        "id": 5,
+        "img": "./assets/img/productos/adidas/SUPERSTAR-2.png",
+        "marca": "./assets/img/productos/adidas/mark-adidas",
+        "titulo": "ZAPATILLAS ADIDAS ORIGINALS SUPERSTAR LONA",
+        "genero": "UNISEX",
+        "precio": 20999
+    },
+    {
+        "id": 6,
+        "img": "./assets/img/productos/adidas/U_PATH RUN.png",
+        "marca": "./assets/img/productos/adidas/mark-adidas",
+        "titulo": "ZAPATILLAS ADIDAS ORIGINALS U_PATH RUN",
+        "genero": "HOMBRE",
+        "precio": 14999
+    },
+    {
+        "id": 7,
+        "img": "./assets/img/productos/fila/BOTITAS FILA GRANT HILL 2.png",
+        "marca": "./assets/img/productos/fila/mark-fila",
+        "titulo": "BOTITAS FILA GRANT HILL 2",
+        "genero": "HOMBRE",
+        "precio": 26999
+    },
+    {
+        "id": 8,
+        "img": "./assets/img/productos/fila/GRANT HILL 2.png",
+        "marca": "./assets/img/productos/fila/mark-fila",
+        "titulo": "ZAPATILLAS FILA DISRUPTOR II FLORAL",
+        "genero": "MUJER",
+        "precio": 12490
+    },
+    {
+        "id": 9,
+        "img": "./assets/img/productos/fila/RAY-TRACER.png",
+        "marca": "./assets/img/productos/fila/mark-fila",
+        "titulo": "ZAPATILLAS FILA RAY TRACER",
+        "genero": "UNISEX",
+        "precio": 14999
+    },
+    {
+        "id": 10,
+        "img": "./assets/img/productos/fila/RAY.png",
+        "marca": "./assets/img/productos/fila/mark-fila",
+        "titulo": "ZAPATILLAS FILA RAY",
+        "genero": "MUJER",
+        "precio": 14999
+    },
+    {
+        "id": 11,
+        "img": "./assets/img/productos/fila/RENNO.png",
+        "marca": "./assets/img/productos/fila/mark-fila",
+        "titulo": "ZAPATILLAS FILA RENNO",
+        "genero": "HOMBRE",
+        "precio": 14999
+    },
+    {
+        "id": 12,
+        "img": "./assets/img/productos/fila/SUREFIRE.png",
+        "marca": "./assets/img/productos/fila/mark-fila",
+        "titulo": "ZAPATILLAS FILA SUREFIRE",
+        "genero": "UNISEX",
+        "precio": 12999
+    },
+    {
+        "id": 13,
+        "img": "./assets/img/productos/jordan/AIR 11 RETRO.png",
+        "marca": "./assets/img/productos/jordan/mark-jordan",
+        "titulo": "BOTITAS JORDAN AIR 11 RETRO",
+        "genero": "HOMBRE",
+        "precio": 39999
+    },
+    {
+        "id": 14,
+        "img": "./assets/img/productos/jordan/AIR 3 RETRO.png",
+        "marca": "./assets/img/productos/jordan/mark-jordan",
+        "titulo": "BOTITAS JORDAN AIR 3 RETRO",
+        "genero": "HOMBRE",
+        "precio": 42999
+    },
+    {
+        "id": 15,
+        "img": "./assets/img/productos/jordan/AIR 7 RETRO.png",
+        "marca": "./assets/img/productos/jordan/mark-jordan",
+        "titulo": "BOTITAS JORDAN AIR 7 RETRO",
+        "genero": "HOMBRE",
+        "precio": 44999
+    },
+    {
+        "id": 16,
+        "img": "./assets/img/productos/jordan/AIR RETRO 11 LOW.png",
+        "marca": "./assets/img/productos/jordan/mark-jordan",
+        "titulo": "BOTITAS JORDAN AIR RETRO 11 LOW",
+        "genero": "HOMBRE",
+        "precio": 39999
+    },
+    {
+        "id": 17,
+        "img": "./assets/img/productos/jordan/AIR MAX 200 XX.png",
+        "marca": "./assets/img/productos/jordan/mark-jordan",
+        "titulo": "APATILLAS JORDAN AIR MAX 200 XX",
+        "genero": "MUJER",
+        "precio": 27999
+    },
+    {
+        "id": 18,
+        "img": "./assets/img/productos/jordan/AIR NFH.png",
+        "marca": "./assets/img/productos/jordan/mark-jordan",
+        "titulo": "ZAPATILLAS JORDAN AIR NFH",
+        "genero": "HOMBRE",
+        "precio": 25999
+    },
+    {
+        "id": 19,
+        "img": "./assets/img/productos/nike/AIR FORCE 1 07 LX.png",
+        "marca": "./assets/img/productos/nike/mark-nike",
+        "titulo": "ZAPATILLAS NIKE AIR FORCE 1 07 LX",
+        "genero": "MUJER",
+        "precio": 25999
+    },
+    {
+        "id": 20,
+        "img": "./assets/img/productos/nike/AIR FORCE 1 07 PREMIUM.png",
+        "marca": "./assets/img/productos/nike/mark-nike",
+        "titulo": "ZAPATILLAS NIKE AIR FORCE 1 07 PREMIUM",
+        "genero": "HOMBRE",
+        "precio": 30999
+    },
+    {
+        "id": 21,
+        "img": "./assets/img/productos/nike/AIR FORCE 1 TYPE-1.png",
+        "marca": "./assets/img/productos/nike/mark-nike",
+        "titulo": "ZAPATILLAS NIKE AIR FORCE 1 TYPE-1",
+        "genero": "HOMBRE",
+        "precio": 32999
+    },
+    {
+        "id": 22,
+        "img": "./assets/img/productos/nike/AIR MAX PRE-DAY.png",
+        "marca": "./assets/img/productos/nike/mark-nike",
+        "titulo": "ZAPATILLAS NIKE AIR MAX PRE-DAY",
+        "genero": "UNISEX",
+        "precio": 28999
+    },
+    {
+        "id": 23,
+        "img": "./assets/img/productos/nike/BLAZER LOW 77.png",
+        "marca": "./assets/img/productos/nike/mark-nike",
+        "titulo": "ZAPATILLAS NIKE BLAZER LOW 77",
+        "genero": "UNISEX",
+        "precio": 24999
+    },
+    {
+        "id": 24,
+        "img": "./assets/img/productos/nike/CRATER IMPACT.png",
+        "marca": "./assets/img/productos/nike/mark-nike",
+        "titulo": "ZAPATILLAS NIKE CRATER IMPACT",
+        "genero": "MUJER",
+        "precio": 22999
+    },
+    {
+        "id": 25,
+        "img": "./assets/img/productos/puma/CAVEN.png",
+        "marca": "./assets/img/productos/puma/mark-puma",
+        "titulo": "ZAPATILLAS PUMA CAVEN",
+        "genero": "UNISEX",
+        "precio": 11999
+    },
+    {
+        "id": 26,
+        "img": "./assets/img/productos/puma/CLASSIC_XXI.png",
+        "marca": "./assets/img/productos/puma/mark-puma",
+        "titulo": "ZAPATILLAS PUMA CLASSIC XXI",
+        "genero": "UNISEX",
+        "precio": 13999
+    },
+    {
+        "id": 27,
+        "img": "./assets/img/productos/puma/DISTA_RUNNER.png",
+        "marca": "./assets/img/productos/puma/mark-puma",
+        "titulo": "ZAPATILLAS PUMA DISTA RUNNER",
+        "genero": "HOMBRE",
+        "precio": 11999
+    },
+    {
+        "id": 28,
+        "img": "./assets/img/productos/puma/FUTURE_RIDER_PLAY_ON.png",
+        "marca": "./assets/img/productos/puma/mark-puma",
+        "titulo": "ZAPATILLAS PUMA FUTURE RIDER PLAY ON",
+        "genero": "UNISEX",
+        "precio": 14999
+    },
+    {
+        "id": 29,
+        "img": "./assets/img/productos/puma/RS-Z_AS.png",
+        "marca": "./assets/img/productos/puma/mark-puma",
+        "titulo": "ZAPATILLAS PUMA RS-Z AS",
+        "genero": "UNISEX",
+        "precio": 18999
+    },
+    {
+        "id": 30,
+        "img": "./assets/img/productos/puma/SUEDE_TRIPLEX.png",
+        "marca": "./assets/img/productos/puma/mark-puma",
+        "titulo": "ZAPATILLAS PUMA SUEDE TRIPLEX",
+        "genero": "HOMBRE",
+        "precio": 17999
+    }
+]

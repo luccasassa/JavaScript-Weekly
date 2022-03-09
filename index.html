@@ -1,35 +1,180 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="styles/styles.css">
+    <!-- estilos -->
+    <link rel="stylesheet" href="assets/styles/main.css">
 
-    <title>Eventos - Sassaroli</title>
+    <title>RED STORE ®</title>
 </head>
 
 <body>
-    <main class="calculadora">
-        <div class="container">
-            <h1>CALCULOS BÁSICOS</h1>
-            <p>Elegí el tipo de operación que queres hacer.</p>
-            <div class="buttons">
-                <input type="button" onclick="sumar()" class="buttons" value="Sumar">
-                <input type="button" onclick="restar()" class="buttons" value="Restar">
-                <input type="button" onclick="multiplicar()" class="buttons" value="Multiplicar">
-                <input type="button" onclick="dividir()" class="buttons" value="Dividir">
+
+    <!-- encabezado -->
+    <nav>
+        <div class="nav-logo">
+            <img src="./assets/img/logo/logo.png" id="logo">
+        </div>
+
+        <div class="nav-items">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+
+        </div>
+
+        <div class="nav-iconos">
+            
+            <div class="cart-user">
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-cart-arrow-down"></i>
+            </div>
+            
+            <div class="wrapper-color-switch">
+                <input type="checkbox" id="input-color-switch">
+                <label for="input-color-switch" class="color-switch"></label>
             </div>
         </div>
+    </nav>
+
+    <!-- cuerpo -->
+    <main>
+
+        <!-- sliders -->
+        <aside>
+            <div class="slider">
+                <figure>
+                    <img src="./assets/img/sliders/slider3.webp">
+                    <img src="./assets/img/sliders/slider2.webp">
+                    <img src="./assets/img/sliders/slider1.webp">
+                    <img src="./assets/img/sliders/slider5.webp">
+                    <img src="./assets/img/sliders/slider3.webp">
+                </figure>
+            </div>
+        </aside>
+
+        <!-- productos -->
+        <h1>NUESTRAS MARCAS</h1>
+        <div class="marcas">
+            <a href="#!" class="marca-filtro">
+                <img src="./assets/img/productos/adidas/mark-adidas.png" alt="logo-adidas">
+            </a>
+            <a href="#!" class="marca-filtro">
+                <img src="./assets/img/productos/nike/mark-nike.png" alt="logo-nike">
+            </a>
+            <a href="#!" class="marca-filtro">
+                <img src="./assets/img/productos/jordan/mark-jordan.png" alt="logo-jordan">
+            </a>
+            <a href="#!" class="marca-filtro">
+                <img src="./assets/img/productos/puma/mark-puma.png" alt="logo-puma">
+            </a>
+            <a href="#!" class="marca-filtro">
+                <img src="./assets/img/productos/fila/mark-fila.png" alt="logo-fila">
+            </a>
+        </div>
+        
+        <h2>Productos</h2>
+        <div class="productos">
+            <div class="producto">
+                <img src="assets/img/productos/adidas/3MC-VULCANIZADOS.png">
+
+                <div class="descripcion">
+                    <img src="assets/img/productos/adidas/mark-adidas.png" class="marca">
+                    <span class="titulo">ADIDAS ORIGINALS 3MC-VULCANIZADOS</span>
+                    <span class="genero">HOMBRE</span>
+                    <span class="precio">11999</span>
+
+                    <select name="two" class="dropdown-select">
+                        <option value="36">Talle 36</option>
+                        <option value="38">Talle 38</option>
+                        <option value="40" selected>Talle 40</option>
+                        <option value="42">Talle 42</option>
+                        <option value="44">Talle 44</option>
+                    </select>
+                      
+                    <span class="envio">Envío gratis</span>
+                    <button><b>AGREGAR AL CARRITO</b></button>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="assets/img/productos/adidas/MULTIX.png">
+
+                <div class="descripcion">
+                    <img src="assets/img/productos/adidas/mark-adidas.png" class="marca">
+                    <span class="titulo">ADIDAS ORIGINALS AUTO-MULTIX</span>
+                    <span class="genero">HOMBRE</span>
+                    <span class="precio">14999</span>
+                    <span class="envio">Envío gratis</span>
+                    <button><b>AGREGAR AL CARRITO</b></button>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="assets/img/productos/adidas/STAN-SMITH.png">
+
+                <div class="descripcion">
+                    <img src="assets/img/productos/adidas/mark-adidas.png" class="marca">
+                    <span class="titulo">ADIDAS ORIGINALS STAN SMITH</span>
+                    <span class="genero">HOMBRE</span>
+                    <span class="precio">17999</span>
+                    <span class="envio">Envío gratis</span>
+                    <button><b>AGREGAR AL CARRITO</b></button>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="assets/img/productos/adidas/SUPERSTAR-1.png">
+
+                <div class="descripcion">
+                    <img src="assets/img/productos/adidas/mark-adidas.png" class="marca">
+                    <span class="titulo">ADIDAS ORIGINALS SUPERSTAR</span>
+                    <span class="genero">UNISEX</span>
+                    <span class="precio">20999</span>
+                    <span class="envio">Envío gratis</span>
+                    <button><b>AGREGAR AL CARRITO</b></button>
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="assets/img/productos/adidas/SUPERSTAR-2.png">
+
+                <div class="descripcion">
+                    <img src="assets/img/productos/adidas/mark-adidas.png" class="marca">
+                    <span class="titulo">ADIDAS ORIGINALS SUPERSTAR LONA</span>
+                    <span class="genero">UNISEX</span>
+                    <span class="precio">20999</span>
+                    <span class="envio">Envío gratis</span>
+                    <button><b>AGREGAR AL CARRITO</b></button>
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="assets/img/productos/adidas/U_PATH RUN.png">
+
+                <div class="descripcion">
+                    <img src="assets/img/productos/adidas/mark-adidas.png" class="marca">
+                    <span class="titulo">ADIDAS ORIGINALS U_PATH RUN</span>
+                    <span class="genero">HOMBRE</span>
+                    <span class="precio">14999</span>
+                    <span class="envio">Envío gratis</span>
+                    <button><b>AGREGAR AL CARRITO</b></button>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <footer>
-        <span>Sassaroli Luca - CoderHouse</span>
+
     </footer>
 
-    <script src="js/javascript.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/591b1de1f6.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
