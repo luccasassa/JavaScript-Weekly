@@ -2,179 +2,223 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- estilos -->
-    <link rel="stylesheet" href="assets/styles/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
 
-    <title>RED STORE ®</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+
+	<link rel="stylesheet" href="./assets/styles/main.css">
+
+	<title>Watch Store</title>
 </head>
 
 <body>
+	<div class="static">
+		<header>
+			<div class="titulos">
+				<h1>Luxury Store</h1>
+				<h2>Premium Store</h2>
+			</div>
 
-    <!-- encabezado -->
-    <nav>
-        <div class="nav-logo">
-            <img src="./assets/img/logo/logo.png" id="logo">
+			<div class="wrapper-color-switch">
+				<input type="checkbox" id="input-color-switch">
+				<label for="input-color-switch" class="color-switch"></label>
+			</div>
+		</header>
+
+		<nav>
+			<button class="btn-menu" data-pushbar-target="pushbar-menu"><i class="fas fa-bars"></i></button>
+			<a href="#" class="banner" data-pushbar-target="pushbar-productos">Otros productos exclusivos</a>
+			<button class="btn-menu" data-pushbar-target="pushbar-carrito"><i
+					class="fa-solid fa-cart-arrow-down"></i></button>
+		</nav>
+	</div>
+
+	<div class="separador">
+		<span>PRODUCTOS</span>
+	</div>
+
+	<section class="productos">
+
+		<!-- Producto caja individual -->
+		<template class="template">
+			<div class="producto">
+				<img >
+				<span class="nombre"></span>
+				<span class="genero"></span>
+				<span class="precio"></span>
+			</div>
+		</template>
+
+	</section>
+
+	<div class="separador">
+		<span>EL MUNDO DE ROLEX</span>
+	</div>
+
+	<div class="swiper">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide-image" style="background-image: url(./assets/img/swiper/tenis.png)">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slide-image" style="background-image: url(./assets/img/swiper/hipica.png)">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slide-image" style="background-image: url(./assets/img/swiper/golf.png)">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <article class="slide-content">
+                        <h4>PATROCINIO</h4>
+                        <p>
+                            Rolex siempre acompañó a exploradores y triunfadores por todo el mundo, desde la cima de las montañas más altas hasta los puntos más profundos del océano.
+                        </p>
+
+                        <footer>
+                            <div>1 de 2</div>
+                            <a href="https://www.rolex.com/es/world-of-rolex.html" target="_blank">LEER MAS</a>
+                        </footer>
+                    </article>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slide-image" style="background-image: url(./assets/img/swiper/automovilismo.png)">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slide-image"
+                        style="background-image: url(./assets/img/swiper/vela.png)">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slide-image" style="background-image: url(./assets/img/swiper/cine.png)">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slide-image" style="background-image: url(./assets/img/swiper/artes.png)">
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
         </div>
+    </div>
 
-        <div class="nav-items">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Sobre Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
+	<!-- Pushbars: Menu -->
+	<div data-pushbar-id="pushbar-menu" data-pushbar-direction="left" class="pushbar from_left menu">
 
-        </div>
+		<div class="btn-cerrar der">
+			<button data-pushbar-close><i class="fas fa-times"></i></button>
+		</div>
 
-        <div class="nav-iconos">
-            
-            <div class="cart-user">
-                <i class="fa-solid fa-user"></i>
-                <i class="fa-solid fa-cart-arrow-down"></i>
-            </div>
-            
-            <div class="wrapper-color-switch">
-                <input type="checkbox" id="input-color-switch">
-                <label for="input-color-switch" class="color-switch"></label>
-            </div>
-        </div>
-    </nav>
+		<nav class="menu">
+			<a href="index.html">Inicio</a>
+			<a href="index.html">Productos</a>
+			<a href="index.html">Contacto</a>
+			<a href="index.html">Quienes Somos</a>
+			<a href="index.html">Ayuda</a>
+		</nav>
+	</div>
 
-    <!-- cuerpo -->
-    <main>
+	<!-- Pushbars: Carrito de Compras -->
+	<div data-pushbar-id="pushbar-carrito" data-pushbar-direction="right" class="pushbar from-right carrito">
 
-        <!-- sliders -->
-        <aside>
-            <div class="slider">
-                <figure>
-                    <img src="./assets/img/sliders/slider3.webp">
-                    <img src="./assets/img/sliders/slider2.webp">
-                    <img src="./assets/img/sliders/slider1.webp">
-                    <img src="./assets/img/sliders/slider5.webp">
-                    <img src="./assets/img/sliders/slider3.webp">
-                </figure>
-            </div>
-        </aside>
+		<div class="btn-cerrar izq">
+			<button data-pushbar-close><i class="fas fa-times"></i></button>
+		</div>
 
-        <!-- productos -->
-        <h1>NUESTRAS MARCAS</h1>
-        <div class="marcas">
-            <a href="#!" class="marca-filtro">
-                <img src="./assets/img/productos/adidas/mark-adidas.png" alt="logo-adidas">
-            </a>
-            <a href="#!" class="marca-filtro">
-                <img src="./assets/img/productos/nike/mark-nike.png" alt="logo-nike">
-            </a>
-            <a href="#!" class="marca-filtro">
-                <img src="./assets/img/productos/jordan/mark-jordan.png" alt="logo-jordan">
-            </a>
-            <a href="#!" class="marca-filtro">
-                <img src="./assets/img/productos/puma/mark-puma.png" alt="logo-puma">
-            </a>
-            <a href="#!" class="marca-filtro">
-                <img src="./assets/img/productos/fila/mark-fila.png" alt="logo-fila">
-            </a>
-        </div>
-        
-        <h2>Productos</h2>
-        <div class="productos">
-            <div class="producto">
-                <img src="assets/img/productos/adidas/3MC-VULCANIZADOS.png">
+		<span class="titulo">Carrito de compras</span>
 
-                <div class="descripcion">
-                    <img src="assets/img/productos/adidas/mark-adidas.png" class="marca">
-                    <span class="titulo">ADIDAS ORIGINALS 3MC-VULCANIZADOS</span>
-                    <span class="genero">HOMBRE</span>
-                    <span class="precio">11999</span>
+		<div class="item">
+			<img src="./assets/img/productos/Rolex-Lady-DateJust-Diamante.webp">
+			<div class="textos">
+				<span class="nombre-item">Nombre del producto</span>
+				<span class="precio-producto">$99999</span>
+			</div>
+		</div>
 
-                    <select name="two" class="dropdown-select">
-                        <option value="36">Talle 36</option>
-                        <option value="38">Talle 38</option>
-                        <option value="40" selected>Talle 40</option>
-                        <option value="42">Talle 42</option>
-                        <option value="44">Talle 44</option>
-                    </select>
-                      
-                    <span class="envio">Envío gratis</span>
-                    <button><b>AGREGAR AL CARRITO</b></button>
-                </div>
-            </div>
-            <div class="producto">
-                <img src="assets/img/productos/adidas/MULTIX.png">
+		<div class="item">
+			<img src="./assets/img/productos/Rolex-Pearlmaster-39.webp">
+			<div class="textos">
+				<span class="nombre-item">Nombre del producto</span>
+				<span class="precio-producto">$99999</span>
+			</div>
+		</div>
 
-                <div class="descripcion">
-                    <img src="assets/img/productos/adidas/mark-adidas.png" class="marca">
-                    <span class="titulo">ADIDAS ORIGINALS AUTO-MULTIX</span>
-                    <span class="genero">HOMBRE</span>
-                    <span class="precio">14999</span>
-                    <span class="envio">Envío gratis</span>
-                    <button><b>AGREGAR AL CARRITO</b></button>
-                </div>
-            </div>
-            <div class="producto">
-                <img src="assets/img/productos/adidas/STAN-SMITH.png">
+		<div class="item">
+			<img src="./assets/img/productos/Rolex-Oyster-Perpetual.webp">
+			<div class="textos">
+				<span class="nombre-item">Nombre del producto</span>
+				<span class="precio-producto">$99999</span>
+			</div>
+		</div>
 
-                <div class="descripcion">
-                    <img src="assets/img/productos/adidas/mark-adidas.png" class="marca">
-                    <span class="titulo">ADIDAS ORIGINALS STAN SMITH</span>
-                    <span class="genero">HOMBRE</span>
-                    <span class="precio">17999</span>
-                    <span class="envio">Envío gratis</span>
-                    <button><b>AGREGAR AL CARRITO</b></button>
-                </div>
-            </div>
-            <div class="producto">
-                <img src="assets/img/productos/adidas/SUPERSTAR-1.png">
+		<div class="total">
+			<span class="precio-total">Total: </span>
+			<span class="precio-total">$99999</span>
+		</div>
+	</div>
 
-                <div class="descripcion">
-                    <img src="assets/img/productos/adidas/mark-adidas.png" class="marca">
-                    <span class="titulo">ADIDAS ORIGINALS SUPERSTAR</span>
-                    <span class="genero">UNISEX</span>
-                    <span class="precio">20999</span>
-                    <span class="envio">Envío gratis</span>
-                    <button><b>AGREGAR AL CARRITO</b></button>
-                </div>
-            </div>
+	<!-- Pushbars: Productos -->
+	<div data-pushbar-id="pushbar-productos" data-pushbar-direction="top" class="pushbar from-top productos">
 
-            <div class="producto">
-                <img src="assets/img/productos/adidas/SUPERSTAR-2.png">
+		<div class="items">
+			<div class="item">
+				<a href="#"><img src="assets/img/otros/trajes.png"></a>
+				<span><a href="#">Trajes</a></span>
+			</div>
 
-                <div class="descripcion">
-                    <img src="assets/img/productos/adidas/mark-adidas.png" class="marca">
-                    <span class="titulo">ADIDAS ORIGINALS SUPERSTAR LONA</span>
-                    <span class="genero">UNISEX</span>
-                    <span class="precio">20999</span>
-                    <span class="envio">Envío gratis</span>
-                    <button><b>AGREGAR AL CARRITO</b></button>
-                </div>
-            </div>
+			<div class="item">
+				<a href="#"><img src="assets/img/otros/sombreros.png"></a>
+				<span><a href="#">Sombreros</a></span>
+			</div>
 
-            <div class="producto">
-                <img src="assets/img/productos/adidas/U_PATH RUN.png">
+			<div class="item">
+				<a href="#"><img src="assets/img/otros/accesorios.png"></a>
+				<span><a href="#">Accesorios</a></span>
+			</div>
+		</div>
 
-                <div class="descripcion">
-                    <img src="assets/img/productos/adidas/mark-adidas.png" class="marca">
-                    <span class="titulo">ADIDAS ORIGINALS U_PATH RUN</span>
-                    <span class="genero">HOMBRE</span>
-                    <span class="precio">14999</span>
-                    <span class="envio">Envío gratis</span>
-                    <button><b>AGREGAR AL CARRITO</b></button>
-                </div>
-            </div>
-        </div>
+		<div class="btn-cerrar der">
+			<button data-pushbar-close><i class="fas fa-times"></i></button>
+		</div>
+	</div>
 
-    </main>
+	<!-- Pushbars: Newsletter -->
+	<div data-pushbar-id="pushbar-newsletter" data-pushbar-direction="bottom" class="pushbar from-bottom newsletter">
 
-    <footer>
+		<div class="btn-cerrar der">
+			<button data-pushbar-close><i class="fas fa-times"></i></button>
+		</div>
 
-    </footer>
+		<div>
+			<h3>Suscribite a nuestro newsletter!</h3>
+			<form id="newsletterForm">
+				<input type="text" placeholder="Tu nombre" required>
+				<input type="email" placeholder="Tu correo" required>
+			</form>
 
-    <script src="assets/js/main.js"></script>
-    <script src="https://kit.fontawesome.com/591b1de1f6.js" crossorigin="anonymous"></script>
+			<button form="newsletterForm" type="submit" class="enviar-form">SUSCRIBIRSE</button>
+		</div>
+	</div>
+
+	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+	<script src="https://kit.fontawesome.com/591b1de1f6.js" crossorigin="anonymous"></script>
+
+	<script src="assets/js/pushbar-pluggin.js"></script>
+	<script src="assets/js/main.js"></script>
 </body>
 
 </html>
