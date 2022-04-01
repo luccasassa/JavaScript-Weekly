@@ -1,224 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
+    <!-- SEO -->
+    <meta name="author" content="luccaomg5@gmail.com">
+    <meta name="description" content="Tienda Online RedStore de reventa de productos Sony">
+    <meta name="keywords"
+        content="auriculares, audio, sonido, parlantes, hometheatre, woofers, walkman, mark, tienda, store">
+    <meta name="copyright" content="Luca Sassaroli">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/img/logo/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/img/logo/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/img/logo/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/logo/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/img/logo/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/img/logo/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/img/logo/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/img/logo/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/logo/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/img/logo/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/logo/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/logo/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/logo/favicon/favicon-16x16.png">
 
-	<link rel="stylesheet" href="./assets/styles/main.css">
+    <!-- google icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone" rel="stylesheet">
 
-	<title>Watch Store</title>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/771a952c9e.js" crossorigin="anonymous"></script>
+
+    <!-- Swiper librería -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8.0.7/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- estilos -->
+    <link rel="stylesheet" href="./assets/styles/all.css">
+
+    <title>RED STORE ®</title>
 </head>
 
+
 <body>
-	<div class="static">
-		<header>
-			<div class="titulos">
-				<h1>Luxury Store</h1>
-				<h2>Premium Store</h2>
-			</div>
+    <!-- NAV GENERAL -->
+    <nav>
+        <!-- NAV IZQUIERDA -->
+        <div class="izq">
+            <a href="index.html"><img class="logo"></a>
+        </div>
 
-			<div class="wrapper-color-switch">
-				<input type="checkbox" id="input-color-switch">
-				<label for="input-color-switch" class="color-switch"></label>
-			</div>
-		</header>
+        <!-- NAV DERECHA -->
+        <div class="der">
 
-		<nav>
-			<button class="btn-menu" data-pushbar-target="pushbar-menu"><i class="fas fa-bars"></i></button>
-			<a href="#" class="banner" data-pushbar-target="pushbar-productos">Otros productos exclusivos</a>
-			<button class="btn-menu" data-pushbar-target="pushbar-carrito"><i
-					class="fa-solid fa-cart-arrow-down"></i></button>
-		</nav>
-	</div>
+            <!-- barra de búsqueda -->
+            <form class="buscador">
+                <button type="submit" class="material-icons-outlined">search</button>
+                <input type="search" placeholder="Buscar producto.." required>
+            </form>
 
-	<div class="separador">
-		<span>PRODUCTOS</span>
-	</div>
+            <!-- carrito de compras + modal -->
+            <button id="open-carrito" class="material-icons-outlined carrito">shopping_cart</button>
 
-	<section class="productos">
+            <div class="modal-container-carrito" id="modal_container-carrito">
+                <!-- classList.add "show" -->
+                <div class="modal-carrito">
 
-		<!-- Producto caja individual -->
-		<template class="template">
-			<div class="producto">
-				<img >
-				<span class="nombre"></span>
-				<span class="genero"></span>
-				<span class="precio"></span>
-			</div>
-		</template>
-
-	</section>
-
-	<div class="separador">
-		<span>EL MUNDO DE ROLEX</span>
-	</div>
-
-	<div class="swiper">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="slide-image" style="background-image: url(./assets/img/swiper/tenis.png)">
+                    <!-- MODAL-CARRITO TOP -->
+                    <div class="top">
+                        <span>Carrito de compras</span>
+                        <button id="close-carrito" class="material-icons-outlined">close</button>
                     </div>
-                </div>
 
-                <div class="swiper-slide">
-                    <div class="slide-image" style="background-image: url(./assets/img/swiper/hipica.png)">
+                    <!-- MODAL-CARRITO MID -->
+                    <div class="contenido-mid">
+                        <template class="template-carrito-mid">
+                            <div class="mid">
+                                <img class="img">
+
+                                <div class="textos">
+                                    <span class="nombre-producto"></span>
+
+                                    <div class="cantidades">
+                                        <button class="restar">-</button>
+                                        <span class="cant-producto"></span>
+                                        <button class="sumar">+</button>
+                                    </div>
+
+                                    <span class="precio-producto"></span>
+                                </div>
+                            </div>
+                        </template>
                     </div>
-                </div>
 
-                <div class="swiper-slide">
-                    <div class="slide-image" style="background-image: url(./assets/img/swiper/golf.png)">
-                    </div>
-                </div>
+                    <!-- MODAL-CARRITO BOT -->
+                    <div class="contenido-bot">
+                        <template class="template-carrito-bot">
+                            <div class="bot">
+                                <div class="total">
+                                    <span>Productos: </span>
+                                    <span class="cantidad-total"></span>
+                                </div>
 
-                <div class="swiper-slide">
-                    <article class="slide-content">
-                        <h4>PATROCINIO</h4>
-                        <p>
-                            Rolex siempre acompañó a exploradores y triunfadores por todo el mundo, desde la cima de las montañas más altas hasta los puntos más profundos del océano.
-                        </p>
+                                <div class="total">
+                                    <span>Precio total: </span>
+                                    <span class="precio-total"></span>
+                                </div>
 
-                        <footer>
-                            <div>1 de 2</div>
-                            <a href="https://www.rolex.com/es/world-of-rolex.html" target="_blank">LEER MAS</a>
-                        </footer>
-                    </article>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="slide-image" style="background-image: url(./assets/img/swiper/automovilismo.png)">
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="slide-image"
-                        style="background-image: url(./assets/img/swiper/vela.png)">
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="slide-image" style="background-image: url(./assets/img/swiper/cine.png)">
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="slide-image" style="background-image: url(./assets/img/swiper/artes.png)">
+                                <div class="continuar">
+                                    <button class="vaciar-carrito">VACIAR CARRITO</button>
+                                    <button class="confirmar-compra">CONFIRMAR COMPRA</button>
+                                </div>
+                            </div>
+                        </template>
                     </div>
                 </div>
             </div>
 
-            <div class="swiper-pagination"></div>
+            <!-- dark/light mode -->
+            <button class="material-icons-outlined tema"></button>
+
+            <!-- iniciar sesion + modal -->
+            <a href="#" id="open-login">Log In</a>
+
+            <div class="modal-container-login" id="modal_container-login">
+                <!-- classList.add "show" -->
+                <div class="modal-login">
+                    <!-- MODAL-LOGIN TOP -->
+                    <div class="top">
+                        <span>Iniciar sesión</span>
+                        <button id="close-login" class="material-icons-outlined">close</button>
+                    </div>
+
+                    <form>
+                        <input type="text" placeholder="Usuario" autocomplete="off" required>
+                        <input type="password" placeholder="Contraseña" autocomplete="off" required>
+                        <button type="submit">INICIAR SESION</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- crear cuenta + modal -->
+            <a href="#" id="open-signin">Sign In</a>
+
+            <div class="modal-container-signin" id="modal_container-signin">
+                <!-- classList.add "show" -->
+                <div class="modal-signin">
+                    <div class="top">
+                        <span>Crear cuenta</span>
+                        <button id="close-signin" class="material-icons-outlined">close</button>
+                    </div>
+
+                    <form id="form">
+                        <input type="text" name="Nombre" placeholder="Nombre" autocomplete="off" required>
+                        <input type="text" name="Usuario" placeholder="Usuario" autocomplete="off" required>
+                        <input type="email" name="E-mail" placeholder="E-mail" autocomplete="off" required>
+                        <input type="password" name="Contraseña" autocomplete="off" placeholder="Contraseña" required>
+                        <button type="submit">CREAR CUENTA</button>
+                    </form>
+                </div>
+            </div>
         </div>
-    </div>
+    </nav>
 
-	<!-- Pushbars: Menu -->
-	<div data-pushbar-id="pushbar-menu" data-pushbar-direction="left" class="pushbar from_left menu">
 
-		<div class="btn-cerrar der">
-			<button data-pushbar-close><i class="fas fa-times"></i></button>
-		</div>
+    <!-- MAIN SWIPERS -->
+    <main class="swiper swiper-v swiperVertical">
 
-		<nav class="menu">
-			<a href="index.html">Inicio</a>
-			<a href="index.html">Productos</a>
-			<a href="index.html">Contacto</a>
-			<a href="index.html">Quienes Somos</a>
-			<a href="index.html">Ayuda</a>
-		</nav>
-	</div>
+        <div class="swiper-wrapper">
+            <!-- MAIN INICIO -->
+            <!-- <div class="swiper-slide principal">HOME PRINCIPAL</div> -->
 
-	<!-- Pushbars: Carrito de Compras -->
-	<div data-pushbar-id="pushbar-carrito" data-pushbar-direction="right" class="pushbar from-right carrito">
+            <!-- MAIN INTERMEDIO -->
+            <div class="swiper-slide intermedio">
+                <div class="swiper swiper-h swiperHorizontal">
+                    <div class="swiper-wrapper productos">
 
-		<div class="btn-cerrar izq">
-			<button data-pushbar-close><i class="fas fa-times"></i></button>
-		</div>
+                        <template class="template">
+                            <div class="swiper-slide producto">
+                                <div class="producto-datos">
+                                    <span class="titulo"></span>
+                                    <span class="subtitulo"></span>
+                                    <span class="descripcion"></span>
+                                    <span class="precio"></span>
 
-		<span class="titulo">Carrito de compras</span>
+                                    <!-- <div class="caja-boton"> -->
+                                    <button class="agregar">AGREGAR AL CARRITO</button>
+                                    <!-- </div> -->
+                                </div>
 
-		<div class="item">
-			<img src="./assets/img/productos/Rolex-Lady-DateJust-Diamante.webp">
-			<div class="textos">
-				<span class="nombre-item">Nombre del producto</span>
-				<span class="precio-producto">$99999</span>
-			</div>
-		</div>
+                                <div class="producto-imagen">
+                                    <img>
+                                </div>
+                            </div>
+                        </template>
 
-		<div class="item">
-			<img src="./assets/img/productos/Rolex-Pearlmaster-39.webp">
-			<div class="textos">
-				<span class="nombre-item">Nombre del producto</span>
-				<span class="precio-producto">$99999</span>
-			</div>
-		</div>
+                    </div>
 
-		<div class="item">
-			<img src="./assets/img/productos/Rolex-Oyster-Perpetual.webp">
-			<div class="textos">
-				<span class="nombre-item">Nombre del producto</span>
-				<span class="precio-producto">$99999</span>
-			</div>
-		</div>
+                    <div class="swiper-button-next" style="color: var(--negro);"></div>
+                    <div class="swiper-button-prev" style="color: var(--negro);"></div>
+                    <!-- <div class="swiper-pagination" style="color: var(--negro);"></div> -->
+                </div>
+            </div>
 
-		<div class="total">
-			<span class="precio-total">Total: </span>
-			<span class="precio-total">$99999</span>
-		</div>
-	</div>
+            <!-- MAIN FINAL -->
+            <div class="swiper-slide final">
+                <!-- newsletter -->
+                <div class="newsletter">
+                    <span>Suscribite a nuestro Newsletter!</span>
 
-	<!-- Pushbars: Productos -->
-	<div data-pushbar-id="pushbar-productos" data-pushbar-direction="top" class="pushbar from-top productos">
+                    <form id="newsletter">
+                        <input type="email" placeholder="ejemplo@gmail.com" required>
+                        <button type="submit">Suscribirse</button>
+                    </form>
+                </div>
 
-		<div class="items">
-			<div class="item">
-				<a href="#"><img src="assets/img/otros/trajes.png"></a>
-				<span><a href="#">Trajes</a></span>
-			</div>
+                <!-- redes sociales -->
+                <div class="social">
+                    <div class="redes">
+                        <div class="icon facebook">
+                            <div class="tooltip">Facebook</div>
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
 
-			<div class="item">
-				<a href="#"><img src="assets/img/otros/sombreros.png"></a>
-				<span><a href="#">Sombreros</a></span>
-			</div>
+                        <div class="icon twitter">
+                            <div class="tooltip">Twitter</div>
+                            <i class="fab fa-twitter"></i>
+                        </div>
 
-			<div class="item">
-				<a href="#"><img src="assets/img/otros/accesorios.png"></a>
-				<span><a href="#">Accesorios</a></span>
-			</div>
-		</div>
+                        <div class="icon instagram">
+                            <div class="tooltip">Instagram</div>
+                            <i class="fab fa-instagram"></i>
+                        </div>
 
-		<div class="btn-cerrar der">
-			<button data-pushbar-close><i class="fas fa-times"></i></button>
-		</div>
-	</div>
+                        <div class="icon github">
+                            <div class="tooltip">Github</div>
+                            <span><i class="fab fa-github"></i>
+                        </div>
 
-	<!-- Pushbars: Newsletter -->
-	<div data-pushbar-id="pushbar-newsletter" data-pushbar-direction="bottom" class="pushbar from-bottom newsletter">
+                        <div class="icon youtube">
+                            <div class="tooltip">Youtube</div>
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                    </div>
 
-		<div class="btn-cerrar der">
-			<button data-pushbar-close><i class="fas fa-times"></i></button>
-		</div>
+                    <span>Nuestras redes</span>
+                </div>
+            </div>
+        </div>
 
-		<div>
-			<h3>Suscribite a nuestro newsletter!</h3>
-			<form id="newsletterForm">
-				<input type="text" placeholder="Tu nombre" required>
-				<input type="email" placeholder="Tu correo" required>
-			</form>
+        <!-- <div class="swiper-pagination" style="color: var(--negro);"></div> -->
+    </main>
 
-			<button form="newsletterForm" type="submit" class="enviar-form">SUSCRIBIRSE</button>
-		</div>
-	</div>
 
-	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-	<script src="https://kit.fontawesome.com/591b1de1f6.js" crossorigin="anonymous"></script>
-
-	<script src="assets/js/pushbar-pluggin.js"></script>
-	<script src="assets/js/main.js"></script>
+    <!-- scripts -->
+    <script src="./assets/js/swiper.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
