@@ -74,16 +74,6 @@ body {
   padding: 0;
 }
 
-.dark {
-  --b1: #111;
-  --b2: #f9f9f9;
-  --nav: #2b2929;
-  --blanco: #000;
-  --negro: #fff;
-  --sombraOscura: rgba(250, 250, 250, 0.5);
-  --sombraClarita: rgba(250, 250, 250, 0.2);
-}
-
 :root {
   --a1: #1f1c1f;
   --a2: #40191c;
@@ -146,16 +136,6 @@ body {
   color: var(--negro);
   margin: 0;
   padding: 0;
-}
-
-.dark {
-  --b1: #111;
-  --b2: #f9f9f9;
-  --nav: #2b2929;
-  --blanco: #000;
-  --negro: #fff;
-  --sombraOscura: rgba(250, 250, 250, 0.5);
-  --sombraClarita: rgba(250, 250, 250, 0.2);
 }
 
 nav {
@@ -378,6 +358,7 @@ nav .der .modal-carrito .contenido-mid .mid .textos {
 }
 
 nav .der .modal-carrito .contenido-mid .mid .textos .cantidades button {
+  color: var(--negro);
   background-color: var(--sombraClarita);
   width: 30px;
   height: 30px;
@@ -463,6 +444,12 @@ nav .der .modal-carrito .contenido-bot .bot .continuar .confirmar-compra {
 
 nav .der .modal-carrito .contenido-bot .bot .continuar .confirmar-compra:active {
   background-color: var(--a8);
+}
+
+nav .der .modal-carrito .contenido-bot .carrito-vacio {
+  margin: 40px;
+  font-size: 2rem;
+  text-align: center;
 }
 
 nav .der button.tema {
@@ -777,19 +764,15 @@ body {
   padding: 0;
 }
 
-.dark {
-  --b1: #111;
-  --b2: #f9f9f9;
-  --nav: #2b2929;
-  --blanco: #000;
-  --negro: #fff;
-  --sombraOscura: rgba(250, 250, 250, 0.5);
-  --sombraClarita: rgba(250, 250, 250, 0.2);
-}
-
 .swiper {
   width: 100%;
   height: 100%;
+  /* para que no desaparezca el pagination horizontal */
+  overflow: auto;
+}
+
+.swiper::-webkit-scrollbar {
+  width: 0;
 }
 
 main .swiper-slide {
@@ -1102,5 +1085,15 @@ main .final .social .redes .youtube:hover .tooltip,
 main .final .social .redes .youtube:hover .tooltip::before {
   background-color: #de463b;
   color: #fff;
+}
+
+.dark {
+  --b1: #111;
+  --b2: #f9f9f9;
+  --nav: #2b2929;
+  --blanco: #000;
+  --negro: #fff;
+  --sombraOscura: rgba(250, 250, 250, 0.5);
+  --sombraClarita: rgba(250, 250, 250, 0.2);
 }
 /*# sourceMappingURL=all.css.map */

@@ -55,7 +55,7 @@
     <nav>
         <!-- NAV IZQUIERDA -->
         <div class="izq">
-            <a href="index.html"><img class="logo"></a>
+            <a href="./index.html"><img class="logo"></a>
         </div>
 
         <!-- NAV DERECHA -->
@@ -81,46 +81,13 @@
                     </div>
 
                     <!-- MODAL-CARRITO MID -->
-                    <div class="contenido-mid">
-                        <template class="template-carrito-mid">
-                            <div class="mid">
-                                <img class="img">
-
-                                <div class="textos">
-                                    <span class="nombre-producto"></span>
-
-                                    <div class="cantidades">
-                                        <button class="restar">-</button>
-                                        <span class="cant-producto"></span>
-                                        <button class="sumar">+</button>
-                                    </div>
-
-                                    <span class="precio-producto"></span>
-                                </div>
-                            </div>
-                        </template>
-                    </div>
+                    <div class="contenido-mid"></div>
 
                     <!-- MODAL-CARRITO BOT -->
                     <div class="contenido-bot">
-                        <template class="template-carrito-bot">
-                            <div class="bot">
-                                <div class="total">
-                                    <span>Productos: </span>
-                                    <span class="cantidad-total"></span>
-                                </div>
-
-                                <div class="total">
-                                    <span>Precio total: </span>
-                                    <span class="precio-total"></span>
-                                </div>
-
-                                <div class="continuar">
-                                    <button class="vaciar-carrito">VACIAR CARRITO</button>
-                                    <button class="confirmar-compra">CONFIRMAR COMPRA</button>
-                                </div>
-                            </div>
-                        </template>
+                        <div class="carrito-vacio">
+                            <span class="esta-vacio">SU CARRITO ESTÁ VACÍO</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -184,25 +151,6 @@
                 <div class="swiper swiper-h swiperHorizontal">
                     <div class="swiper-wrapper productos">
 
-                        <template class="template">
-                            <div class="swiper-slide producto">
-                                <div class="producto-datos">
-                                    <span class="titulo"></span>
-                                    <span class="subtitulo"></span>
-                                    <span class="descripcion"></span>
-                                    <span class="precio"></span>
-
-                                    <!-- <div class="caja-boton"> -->
-                                    <button class="agregar">AGREGAR AL CARRITO</button>
-                                    <!-- </div> -->
-                                </div>
-
-                                <div class="producto-imagen">
-                                    <img>
-                                </div>
-                            </div>
-                        </template>
-
                     </div>
 
                     <div class="swiper-button-next" style="color: var(--negro);"></div>
@@ -260,6 +208,63 @@
         <!-- <div class="swiper-pagination" style="color: var(--negro);"></div> -->
     </main>
 
+    <!-- TEMPLATES -->
+    <!-- template productos stock -->
+    <template class="template">
+        <div class="swiper-slide producto">
+            <div class="producto-datos">
+                <span class="titulo"></span>
+                <span class="subtitulo"></span>
+                <span class="descripcion"></span>
+                <span class="precio"></span>
+                <button class="agregar">AGREGAR AL CARRITO</button>
+            </div>
+
+            <div class="producto-imagen">
+                <img>
+            </div>
+        </div>
+    </template>
+
+
+    <!-- template carrito mid -->
+    <template class="template-carrito-mid">
+        <div class="mid">
+            <img class="img">
+
+            <div class="textos">
+                <span class="nombre-producto"></span>
+
+                <div class="cantidades">
+                    <button class="restar">-</button>
+                    <span class="cant-producto"></span>
+                    <button class="sumar">+</button>
+                </div>
+
+                <span class="precio-producto"></span>
+            </div>
+        </div>
+    </template>
+
+    <!-- template carrito bot -->
+    <template class="template-carrito-bot">
+        <div class="bot">
+            <div class="total">
+                <span>Productos: </span>
+                <span class="cantidad-total"></span>
+            </div>
+
+            <div class="total">
+                <span>Precio total: </span>
+                <span class="precio-total"></span>
+            </div>
+
+            <div class="continuar">
+                <button class="vaciar-carrito">VACIAR CARRITO</button>
+                <button class="confirmar-compra">CONFIRMAR COMPRA</button>
+            </div>
+        </div>
+    </template>
 
     <!-- scripts -->
     <script src="./assets/js/swiper.js"></script>

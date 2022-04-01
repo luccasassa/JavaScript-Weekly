@@ -9,8 +9,8 @@ const template = d.querySelector(".template").content
 const fragment = d.createDocumentFragment()
 
 //Agregar productos al carrito
-let contenidoMid = d.querySelector('.contenido-mid')
-let contenidoBot = d.querySelector('.contenido-bot')
+const contenidoMid = d.querySelector('.contenido-mid')
+const contenidoBot = d.querySelector('.contenido-bot')
 const templateCarritoMid = d.querySelector('.template-carrito-mid').content
 const templateCarritoBot = d.querySelector('.template-carrito-bot').content
 let carrito = {}
@@ -32,14 +32,14 @@ const closeSignin = d.querySelector('#close-signin');
 //Traer datos JSON
 addEventListener("load", async () => {
     try {
-        const resultado = await fetch("../stock.json")
+        const resultado = await fetch("../db.json")
         const datos = await resultado.json()
 
-        // console.table(datos)
+        console.table(datos)
         mostrarStock(datos)
 
     } catch (e) {
-        console.log('Error [' + e + ']. No se pudo fetchear el .json');
+        console.log('No se pudo fetchear el .json');
     }
 })
 
@@ -65,6 +65,12 @@ const mostrarStock = (datos) => {
 //Detectar boton producto
 productos.addEventListener('click', (e) => {
     addCarrito(e)
+})
+
+
+//Detectar botones suma/resta
+contenidoMid.addEventListener('click', (e) => {
+    btnAccion(e)
 })
 
 
@@ -94,10 +100,9 @@ const setCarrito = objeto => {
     if (carrito.hasOwnProperty(producto.id)) {
         producto.cantidad = carrito[producto.id].cantidad+1
     }
+
     carrito[producto.id] = {...producto}
     pintarCarritoMid()
-
-    console.log(producto);
 }
 
 
@@ -120,7 +125,6 @@ const pintarCarritoMid = () => {
     })
     contenidoMid.appendChild(fragment)
 
-    //callback con la bot
     pintarCarritoBot()
 }
 
@@ -128,17 +132,16 @@ const pintarCarritoMid = () => {
 //Carrito pintar bot
 const pintarCarritoBot = () => {
 
-    if (Object.keys(carrito).length === 0) {
+    contenidoBot.innerHTML = ''
+
+    if (Object.values(carrito).length == 0) {
         contenidoBot.innerHTML = `
-        <div style="margin: 40px; font-size: 2rem; 
-                                text-align: center;">
-                                    <span class="esta-vacio">SU CARRITO ESTÁ VACÍO</span>
-                                </div>
+        <div class="carrito-vacio">
+            <span class="esta-vacio">SU CARRITO ESTÁ VACÍO</span>
+        </div>
         `
         return
     }
-
-    contenidoBot.innerHTML = ''
 
     //acumulador
     const nCantidad = Object.values(carrito).reduce((acc, {cantidad}) => acc + cantidad, 0)
@@ -151,13 +154,37 @@ const pintarCarritoBot = () => {
     fragment.appendChild(clone)
     contenidoBot.appendChild(fragment)
 
-
+    //Vaciar carrito
     d.querySelector('.vaciar-carrito').addEventListener('click', () => {
         carrito = {};
         pintarCarritoMid();
     })
+}
 
-    
+const btnAccion = (e) => {
+    //acction de aumentar
+    if (e.target.classList.contains('sumar')) {
+        // console.log(carrito[e.target.dataset.id])
+
+        const producto = carrito[e.target.dataset.id]
+        producto.cantidad++
+
+        carrito[e.target.dataset.id] = {...producto}
+        pintarCarritoMid();
+    }
+
+    if (e.target.classList.contains('restar')) {
+        const producto = carrito[e.target.dataset.id]
+        producto.cantidad--
+
+        if (producto.cantidad === 0) {
+            delete carrito[e.target.dataset.id]
+        }
+
+        pintarCarritoMid()
+    }
+
+    e.stopPropagation()
 }
 
 
@@ -167,7 +194,6 @@ const pintarCarritoBot = () => {
 //Carrito modal window
 openCarrito.addEventListener('click', () => {
     modalContainerCarrito.classList.add('show-carrito');
-    modalContainerCarrito.setAttribute
 });
 
 closeCarrito.addEventListener('click', () => {
