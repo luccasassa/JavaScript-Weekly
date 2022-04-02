@@ -68,7 +68,14 @@
             </form>
 
             <!-- carrito de compras + modal -->
-            <button id="open-carrito" class="material-icons-outlined carrito">shopping_cart</button>
+            <button id="open-carrito" class="material-icons-outlined carrito">shopping_cart
+                <div class="contenido-mini">
+                    <div class="mini">
+                        <span class="cantidad-total">0</span>
+                    </div>
+                </div>
+            </button>
+            
 
             <div class="modal-container-carrito" id="modal_container-carrito">
                 <!-- classList.add "show" -->
@@ -86,7 +93,7 @@
                     <!-- MODAL-CARRITO BOT -->
                     <div class="contenido-bot">
                         <div class="carrito-vacio">
-                            <span class="esta-vacio">SU CARRITO ESTÁ VACÍO</span>
+                            <span>SU CARRITO ESTÁ VACÍO</span>
                         </div>
                     </div>
                 </div>
@@ -209,6 +216,14 @@
     </main>
 
     <!-- TEMPLATES -->
+
+    <!-- mini contador -->
+    <template class="template-mini">
+        <div class="mini">
+            <span class="cantidad-total">0</span>
+        </div>
+    </template>
+
     <!-- template productos stock -->
     <template class="template">
         <div class="swiper-slide producto">

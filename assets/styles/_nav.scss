@@ -72,8 +72,28 @@ nav {
         }
 
         .carrito {
+            position: relative;
             background: transparent;
-            color: var(--a9);
+            color: var(--negro);
+            padding: 10px;
+
+            .contenido-mini {
+                .mini {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 20px;
+                    height: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    font-family: sans-serif;
+                    font-size: .7rem;
+                    background-color: var(--a9);
+                    color: var(--negro);
+                }
+            }
         }
 
         .modal-container-carrito {
@@ -147,6 +167,7 @@ nav {
     
                     .img {
                         grid-area: img;
+                        border: 1px solid red;
                         width: 70%;
                     }
     
@@ -220,22 +241,22 @@ nav {
                         }
     
                         .vaciar-carrito {
-                            padding: 10px;
-                            color: var(--negro);
-                            background-color: var(--restar);
-    
+                            padding: 7px;
+                            color: #fff;
+                            background-color: var(--a9);
+                            
                             &:active {
-                                background-color: var(--a9);
+                                background-color: var(--restar);
                             }
                         }
     
                         .confirmar-compra {
-                            padding: 10px;
-                            color: var(--negro);
-                            background-color: var(--sumar);
-    
+                            padding: 7px;
+                            color: #fff;
+                            background-color: var(--a8);
+                            
                             &:active {
-                                background-color: var(--a8);
+                                background-color: var(--sumar);
                             }
                         }
                     }

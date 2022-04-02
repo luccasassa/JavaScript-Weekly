@@ -11,8 +11,10 @@ const fragment = d.createDocumentFragment()
 //Agregar productos al carrito
 const contenidoMid = d.querySelector('.contenido-mid')
 const contenidoBot = d.querySelector('.contenido-bot')
+const contenidoMini = d.querySelector('.contenido-mini')
 const templateCarritoMid = d.querySelector('.template-carrito-mid').content
 const templateCarritoBot = d.querySelector('.template-carrito-bot').content
+const templateMini = d.querySelector('.template-mini').content
 let carrito = {}
 
 //Modal windows
@@ -93,7 +95,7 @@ const setCarrito = objeto => {
         id: objeto.querySelector('.agregar').dataset.id,
         titulo: objeto.querySelector(".titulo").textContent,
         precio: objeto.querySelector(".precio").textContent,
-        // img: objeto.querySelector('img').dataset.id,
+        // img: objeto.querySelector('img').src,
         cantidad: 1
     }
 
@@ -117,7 +119,7 @@ const pintarCarritoMid = () => {
         templateCarritoMid.querySelector('.cant-producto').textContent = producto.cantidad
         templateCarritoMid.querySelector('.sumar').dataset.id = producto.id
         templateCarritoMid.querySelector('.precio-producto').textContent = producto.cantidad * producto.precio
-        // templateCarritoMid.querySelector('img').dataset.id = producto.img
+        // templateCarritoMid.querySelector('img').textContent = producto.img
 
 
         const clone = templateCarritoMid.cloneNode(true)
@@ -126,6 +128,32 @@ const pintarCarritoMid = () => {
     contenidoMid.appendChild(fragment)
 
     pintarCarritoBot()
+    pintarCarritoMini()
+}
+
+
+//Carrito mini contador pintar
+const pintarCarritoMini = () => {
+
+    contenidoMini.innerHTML = ''
+
+    if (Object.values(carrito).length == 0) {
+        contenidoMini.innerHTML = `
+        <div class="mini">
+            <span class="cantidad-total">0</span>
+        </div>
+        `
+        return
+    }
+
+    //acumulador
+    const nCantidad = Object.values(carrito).reduce((acc, {cantidad}) => acc + cantidad, 0)
+
+    templateMini.querySelector('.cantidad-total').textContent = nCantidad
+
+    const clone = templateMini.cloneNode(true)
+    fragment.appendChild(clone)
+    contenidoMini.appendChild(fragment)
 }
 
 
@@ -137,7 +165,7 @@ const pintarCarritoBot = () => {
     if (Object.values(carrito).length == 0) {
         contenidoBot.innerHTML = `
         <div class="carrito-vacio">
-            <span class="esta-vacio">SU CARRITO ESTÁ VACÍO</span>
+            <span>SU CARRITO ESTÁ VACÍO</span>
         </div>
         `
         return
@@ -158,6 +186,7 @@ const pintarCarritoBot = () => {
     d.querySelector('.vaciar-carrito').addEventListener('click', () => {
         carrito = {};
         pintarCarritoMid();
+        pintarCarritoMini();
     })
 }
 

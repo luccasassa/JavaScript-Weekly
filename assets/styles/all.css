@@ -239,8 +239,32 @@ nav .der .buscador input {
 }
 
 nav .der .carrito {
+  position: relative;
   background: transparent;
-  color: var(--a9);
+  color: var(--negro);
+  padding: 10px;
+}
+
+nav .der .carrito .contenido-mini .mini {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  font-family: sans-serif;
+  font-size: .7rem;
+  background-color: var(--a9);
+  color: var(--negro);
 }
 
 nav .der .modal-container-carrito {
@@ -337,6 +361,7 @@ nav .der .modal-carrito .contenido-mid .mid .img {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: img;
+  border: 1px solid red;
   width: 70%;
 }
 
@@ -427,23 +452,23 @@ nav .der .modal-carrito .contenido-bot .bot .continuar button {
 }
 
 nav .der .modal-carrito .contenido-bot .bot .continuar .vaciar-carrito {
-  padding: 10px;
-  color: var(--negro);
-  background-color: var(--restar);
-}
-
-nav .der .modal-carrito .contenido-bot .bot .continuar .vaciar-carrito:active {
+  padding: 7px;
+  color: #fff;
   background-color: var(--a9);
 }
 
+nav .der .modal-carrito .contenido-bot .bot .continuar .vaciar-carrito:active {
+  background-color: var(--restar);
+}
+
 nav .der .modal-carrito .contenido-bot .bot .continuar .confirmar-compra {
-  padding: 10px;
-  color: var(--negro);
-  background-color: var(--sumar);
+  padding: 7px;
+  color: #fff;
+  background-color: var(--a8);
 }
 
 nav .der .modal-carrito .contenido-bot .bot .continuar .confirmar-compra:active {
-  background-color: var(--a8);
+  background-color: var(--sumar);
 }
 
 nav .der .modal-carrito .contenido-bot .carrito-vacio {
@@ -1003,8 +1028,8 @@ main .final .social .redes .icon {
           align-items: center;
   color: #111;
   background-color: #fff;
-  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 10px 10px rgba(180, 180, 180, 0.1);
+          box-shadow: 0 10px 10px rgba(180, 180, 180, 0.1);
   cursor: pointer;
   -webkit-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -1018,8 +1043,8 @@ main .final .social .redes .tooltip {
   color: #fff;
   padding: 5px 8px;
   border-radius: 5px;
-  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 10px 10px rgba(180, 180, 180, 0.1);
+          box-shadow: 0 10px 10px rgba(180, 180, 180, 0.1);
   opacity: 0;
   pointer-events: none;
   -webkit-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -1049,7 +1074,7 @@ main .final .social .redes .icon:hover .tooltip {
 
 main .final .social .redes .icon:hover span,
 main .final .social .redes .icon:hover .tooltip {
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  text-shadow: 0px -1px 0px rgba(180, 180, 180, 0.1);
 }
 
 main .final .social .redes .facebook:hover,
