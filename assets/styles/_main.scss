@@ -13,6 +13,7 @@
 }
 
 main {
+
     .swiper-slide {
         background: var(--b1);
 
@@ -36,7 +37,7 @@ main {
                 grid-template-areas: "datos imagen";
                 grid-template-columns: 1.4fr 1fr;
                 grid-template-rows: 2.4fr;
-                cursor: default;
+                cursor: grab;
 
                 .producto-datos {
                     grid-area: datos;
